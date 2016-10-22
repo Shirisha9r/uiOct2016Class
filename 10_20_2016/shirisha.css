@@ -1,0 +1,99 @@
+form[name="newLicenseForm"]{
+    display: block;
+    border: 3px solid #783efd;
+    border-radius: 10px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div{
+    margin: 10px 20px;
+    display: inline-block;
+}
+
+label{
+    display: block;
+    padding: 10px 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+button[type="submit"]{
+    border: 1px solid #5e5e5e;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-width: 3px;
+    background-color: #aabef9;
+}
+button[type="reset"]{
+    border: 1px solid #5e5e5e;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-width: 3px;
+    background-color: #f7323b;
+}
+
+button[type="submit"]:hover{
+    background-color: #fbfd3b;
+}
+
+button[type="reset"]:hover{
+    solid #df1b18;
+    background-color: #70f088;
+}
+
+input{
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#main-section{
+    position: relative;
+    top: 50px;
+}
+
+#nav-heading{
+    position: fixed;
+    top: 10;
+    left: 900px;
+    background: #fff;
+}
+
+#main-heading{
+    top: 0;
+    left: 550px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+#main-footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div > label{
+    background: #eef1f4;
+}
+
+fieldset > label{
+    background: #eef1f4;
+}
+div > p{
+    background: yellow;
+}
+
