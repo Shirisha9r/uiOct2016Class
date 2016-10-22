@@ -65,16 +65,24 @@ input{
 
 #nav-heading{
     position: fixed;
-    top: 10;
-    left: 900px;
+    top: 0;
+    left: 500px
     background: #fff;
+
 }
 
 #main-heading{
-    top: 0;
-    left: 550px;
-    background: #fff;
+    float: right;
+    background-color: #fff;
+    color:#05060c;
     margin: 0 auto;
+}
+
+#main-heading-image{
+    width: 55;
+    height: 64;
+    float : right;
+
 }
 
 #main-footer{
@@ -95,5 +103,19 @@ fieldset > label{
 }
 div > p{
     background: yellow;
+    margin: 10px 20px;
+    display: block;
+}
+div + p{
+    color: green;
+    font-size: 1.1rem;
+    padding: 0.6rem,1rem;
+    display: block;
+}
+
+div ~ p{
+    background: #blue;
+    margin: 10px 20px;
+    display: block;
 }
 
