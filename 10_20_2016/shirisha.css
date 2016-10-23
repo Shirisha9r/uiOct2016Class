@@ -26,20 +26,20 @@ li{
     margin: 0 10px;
 }
 
-button[type="submit"]{
-    border: 1px solid #5e5e5e;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px;
-    border-width: 3px;
-    background-color: #aabef9;
-}
+button[type="submit"],
 button[type="reset"]{
     border: 1px solid #5e5e5e;
     border-radius: 5px;
     padding: 10px 20px;
     margin: 10px;
     border-width: 3px;
+}
+
+button[type="submit"]{
+    background-color: #aabef9;
+}
+
+button[type="reset"]{
     background-color: #f7323b;
 }
 
