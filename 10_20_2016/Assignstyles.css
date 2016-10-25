@@ -1,0 +1,30 @@
+body{
+    background-color: #bed8f7;
+}
+#main-heading{
+
+}
+
+#nav-heading{
+    width: 100%;
+}
+#nav-heading > nav{
+    position: relative;
+    top: 10;
+    left: 40%;
+    background-color:#fff;
+}
+#nav-heading > nav > ul{
+    list-type:none;
+}
+/* target the ul and get rid of bullets on the list items
+    and place them right next to each other*/
+#nav-heading > nav > ul li{
+    display: inline-block;
+    padding: 20px;
+}
+/*when hovered over the bgcolor has to change*/
+#nav-heading > nav > ul li:hover{
+    background-color: #dceafb;
+    cursor: pointer;
+}
