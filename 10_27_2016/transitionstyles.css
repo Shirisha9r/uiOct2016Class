@@ -85,6 +85,26 @@ body{
     top: 50%;
     left: 25%;
     opacity: 1;
+
+   /* animation using transition style and 'opacity' as property
+        'cubic-bezier' as the animation timing type
+        refer website http://cubic-bezier.com/#.07,.74,.83,.39  */
+    -webkit-transition: opacity 3s cubic-bezier(.07,.74,.83,.39);
+    -moz-transition: opacity 3s cubic-bezier(.07,.74,.83,.39);
+    -o-transition: opacity 3s cubic-bezier(.07,.74,.83,.39);
+    -ms-transition: opacity 3s cubic-bezier(.07,.74,.83,.39);
+    transition: opacity 3s cubic-bezier(.07,.74,.83,.39);
+
+/*    *//* animation using transition style and 'opacity' as property,
+        'linear' as the animation timing type
+        refer website http://cubic-bezier.com/  this is equal to
+        cubic-bezier(0, 0, 1, 1)                                *//*
+    -webkit-transition: opacity 3s linear;
+    -moz-transition: opacity 3s linear;
+    -o-transition: opacity 3s linear;
+    -ms-transition: opacity 3s linear;
+    transition: opacity 3s linear;*/
+
 }
 
 #main-heading:hover{
@@ -100,10 +120,15 @@ body{
 /*#nav-heading + section > form > h4*/
 form[name="newLicenseForm"]{
     background-color: #fff;
+/*    -webkit-transition: all 3s cubic-bezier(.07,.74,.83,.39);
+    -moz-transition: all 3s cubic-bezier(.07,.74,.83,.39);
+    -o-transition: all 3s cubic-bezier(.07,.74,.83,.39);
+    -ms-transition: all 3s cubic-bezier(.07,.74,.83,.39);
+    transition: all 3s cubic-bezier(.07,.74,.83,.39);*/
 }
 
 form[name="newLicenseForm"]:hover{
-    background-color: #f4b079;
+    background-color: #f0eff0;
 }
 
 form[name="newLicenseForm"] > h4{
@@ -263,11 +288,12 @@ input[type="email"]:invalid + label{
 }
 
 .animate-transition{
-    /*-webkit-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
-    -moz-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
-    -o-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
-    -ms-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
-    transition: all 0.5s cubic-bezier(.56,.23,.72,.77);*/
+    /* here we are animating only list item "download" in the footer navigation */
+    /*-webkit-transition: background-color 0.5s cubic-bezier(.56,.23,.72,.77);
+    -moz-transition: background-color 0.5s cubic-bezier(.56,.23,.72,.77);
+    -o-transition: background-color 0.5s cubic-bezier(.56,.23,.72,.77);
+    -ms-transition: background-color 0.5s cubic-bezier(.56,.23,.72,.77);
+    transition: background-color 0.5s cubic-bezier(.56,.23,.72,.77);*/
 
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;

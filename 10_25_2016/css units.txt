@@ -50,7 +50,7 @@ lets say we have div of width 20vmax this means that when we resize the screen, 
 
 
 
-% -> these take the screen dimensions as there mode of calculation.
+% -> these take the screen dimensions as their mode of calculation.
 example:
 lets say i have a div of width 20%. this means that the width is 20% of the screen width. Meaning, if the screen resolution is 1920(width) x 1080(height) then the width of that div is 20% of 1920 = 384px
 

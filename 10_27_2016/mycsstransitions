@@ -1,0 +1,15 @@
+/**the defaults and their matching cubic-bezier in case you want to start with one of them and customize from there:
+  transition-timing-function: linear;
+  transition-timing-function: cubic-bezier(0, 0, 1, 1);
+
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  transition-timing-function: ease-in-out;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+
+  transition-timing-function: ease-in;
+  transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+
+  transition-timing-function: ease-out;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
