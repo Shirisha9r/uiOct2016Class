@@ -85,6 +85,8 @@ body{
     top: 50%;
     left: 25%;
     opacity: 1;
+    width: 300px;
+    height: 100px;
 
    /* animation using transition style and 'opacity' as property
         'cubic-bezier' as the animation timing type
@@ -295,17 +297,17 @@ input[type="email"]:invalid + label{
     -ms-transition: background-color 0.5s cubic-bezier(.56,.23,.72,.77);
     transition: background-color 0.5s cubic-bezier(.56,.23,.72,.77);*/
 
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out 2s;
+    -moz-transition: all 0.5s ease-in-out 2s;
+    -o-transition: all 0.5s ease-in-out 2s;
+    -ms-transition: all 0.5s ease-in-out 2s;
+    transition: all 0.5s ease-in-out 2s;
 
-    -webkit-transition-delay: 2s;
+/*    -webkit-transition-delay: 2s;
     -moz-transition-delay: 2s;
     -o-transition-delay: 2s;
     -ms-transition-delay: 2s;
-    transition-delay: 2s;
+    transition-delay: 2s;*/
 }
 
 

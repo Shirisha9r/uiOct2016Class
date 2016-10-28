@@ -30,7 +30,8 @@ cubic-bezier(<x-coordinate of the first point>,<y-coordinate of the first point>
 ***coordinate values range from 0 - 1
 
 
-
+syntax:/* Safari */
+-webkit-transition: <property> <duration> <timing-function> <delay>;
 
 transition delay:
 we use these to wait for certain and then apply our animation.
