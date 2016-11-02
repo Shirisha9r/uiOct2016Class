@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--head of the web page-->
+    <head>
+        <!--title - this is the title of this html file-->
+        <title>Yellowstone National Park</title>
+
+        <!--this is external static style-->
+        <link rel="stylesheet" href="styles.css"/>
+
+        <!--this is external animation style-->
+        <link rel="stylesheet" href="animation.css"/>
+    </head>
+
+    <!--body of the web page-->
+    <body>
+        <!--main article for forms-->
+        <article>
+            <header>
+               <h2 id="main-heading">Yellowstone National Park</h2>
+               <h2 id="mirror-heading">Yellowstone National Park</h2>
+            </header>
+            <!--Main body of the page-->
+            <section id="main-section">
+                <article>
+                    <header></header>
+                    <section>
+                        <!-- animating the images by fading their display using CSS-->
+                        <div id="crossfade">
+                            <img src = "ys2.jpg" alt = "jpg"/>
+                            <img src = "ys3.jpg" alt = "jpg"/>
+                            <img src = "ys4.jpg" alt = "jpg"/>
+                            <img src = "ys5.jpg" alt = "jpg"/>
+                            <img src = "ys6.jpg" alt = "jpg"/>
+                        </div>
+
+                        <!--online registration form-->
+                        <form name="RegistrationForm" class="moveRight">
+                            <h3>Registration form</h3>
+
+                            <!--First Name-->
+                            <div>
+                                <input type="text" id="firstName" name="fName" required/>
+                                <label for="firstName">First Name</label>
+                            </div>
+                            <br />
+
+                            <!--Last Name-->
+                            <div>
+                                <input type="text" id="lastName" name="lName" required/>
+                                <label for="lastName">Last Name</label>
+                            </div>
+                            <br />
+
+                            <!--email-->
+                            <div>
+                                <input type="email" id="email" name="email" required/>
+                                <label for="email">Email</label>
+
+                            </div>
+                            <br />
+
+                            <!--Phone Number-->
+                            <div>
+                                <input type="text" id="phoneNumber" name="phoneNumber" required/>
+                                <label for="phoneNumber">Phone Number</label>
+                            </div>
+                            <br />
+
+                            <!--Seasons-->
+                            <div class="container">
+                                <label for="Seasons">Seasons</label>
+                                <input type="checkbox" id="Seasons" name="Seasons" />
+                            </div>
+
+                            <!--Promotion-->
+                            <div class="container">
+                                <label for="Promotions">Promotions</label>
+                                <input type="checkbox" id="Promotions" name="Promotions" />
+                            </div>
+
+                            <!--submit button-->
+                            <button type="submit" id="submit">
+                                <span>Submit</span>
+                            </button>
+                            <!--reset/cancel-->
+                            <button type="reset" id="reset">
+                                <span>Cancel</span>
+                            </button>
+                        </form>
+                    </section>
+                    <footer></footer>
+                </article>
+            </section>
+            <footer> </footer>
+        </article>
+    </body>
+</html>
