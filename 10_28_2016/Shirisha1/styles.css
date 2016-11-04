@@ -1,0 +1,32 @@
+body{
+    color: #000;
+    font-family: Arial,sans-serif;
+    font-weight: 100;
+    line-height: 1.75;
+    background: url(YellowStone.jpg) no-repeat;
+   /* background-size:100% 100%;*/
+    /*background-size: auto 100%;*/
+    background-size: 100% 138%;
+    height:100%
+
+}
+
+form[name="RegistrationForm"]{
+    background-color: #fff;
+    border: 3px solid #fff;
+    padding: 5px;
+    margin: 50,30,50,30;
+    margin-left: 30px;
+    width: 350px;
+    display: block;
+    opacity: 0.9;
+    position: relative;
+}
+
+form[name="RegistrationForm"]:hover{
+    background-color: #96bce4;
+}
+
+
+
+
