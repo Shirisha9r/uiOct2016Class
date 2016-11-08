@@ -6,7 +6,7 @@ body{
     background: url(YellowStone.jpg) no-repeat;
    /* background-size:100% 100%;*/
     /*background-size: auto 100%;*/
-    background-size: 100% 138%;
+    background-size: 100% 450%;
     height:100%
 
 }
@@ -20,7 +20,7 @@ form[name="RegistrationForm"]{
     width: 350px;
     display: block;
     opacity: 0.9;
-    position: relative;
+    position: absolute;
 }
 
 form[name="RegistrationForm"]:hover{
