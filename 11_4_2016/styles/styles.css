@@ -1,5 +1,3 @@
-/* This file will only hold all the variables */
-/* Variables as constants*/
 .border-bottom,
 .header {
   border-bottom: 2px solid #f6f6f6;
@@ -9,16 +7,53 @@
 .header {
   background-color: #fff;
 }
+nav ul {
+  background: #a8c6f9;
+}
+.inline,
+nav ul {
+  color: #f5142d;
+}
+a,
+.link {
+  color: #428bca;
+}
+a:hover {
+  color: #3071a9;
+}
 body {
   background-color: #fff;
+  font-size: 14px;
+}
+@media only screen and (max-width: 660px) and (orientation: landscape) {
+  body {
+    font-size: 10px;
+  }
 }
 .header {
-  background-color: #fff;
+  -webkit-transition: all 6s ease-in-out;
+  -moz-transition: all 6s ease-in-out;
+  -o-transition: all 6s ease-in-out;
+  -ms-transition: all 6s ease-in-out;
+  transition: all 6s ease-in-out;
 }
 .header:hover {
   box-shadow: 0 2px 5px #000;
 }
+#nav-heading > nav > ul li,
+#nav-footer > nav > ul li {
+  display: inline-block;
+  padding: 20px;
+}
 .footer {
-  background-color: #333;
+  background-color: #000;
   color: #fff;
+  -webkit-transition: all 3s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  -moz-transition: all 3s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  -o-transition: all 3s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  -ms-transition: all 3s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  transition: all 3s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+}
+.footer:hover {
+  background-color: #fbfefd;
 }

@@ -1,16 +1,30 @@
 body{
     background-color: @white;
-}
+    font-size: 14px;
+    .ipad(660px, landscape);
+
+ }
+
+ #fonts > .sans-serif;
 .header{
     &:extend(.light-background,.border-bottom);
-    background-color: @white;
     &:hover{
         box-shadow: 0 2px 5px @black;
     }
+
+    .animation(all, 6s, ease-in-out);
+}
+
+#nav-heading > nav > ul li,
+#nav-footer > nav > ul li{
+    display: inline-block;
+    padding: 20px;
 }
 
 .footer{
-    background-color: @dark-grey;
+    .dark-background();
+ //   .border-radius(5px);
     color: @white;
+    .animation(all, 3s, cubic-bezier(.27,.87,.13,.44));
 }
 

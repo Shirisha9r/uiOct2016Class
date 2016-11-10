@@ -1,0 +1,18 @@
+body{
+    background-color: @white;
+}
+
+
+.header{
+    &:extend(.light-background,.border-bottom);
+    background-color: @white;
+    &:hover{
+        box-shadow: 0 2px 5px @black;
+    }
+}
+
+.footer{
+    background-color: @dark-grey;
+    color: @white;
+}
+
