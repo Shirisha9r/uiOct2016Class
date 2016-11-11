@@ -40,7 +40,6 @@ a:hover {
     transition: @prop @secs @type;
 }
 
-
 #fonts {
   .serif (@weight: normal, @size: 14px, @lineHeight: 20px) {
     font-family: Georgia, "Times New Roman", serif;
@@ -55,9 +54,20 @@ a:hover {
     line-height: @lineHeight;
   }
   .monospace (@weight: normal, @size: 14px, @lineHeight: 20px) {
-    font-family: "Lucida Console", Monaco, monospace
+    font-family: "Lucida Console", Monaco, monospace;
     font-weight: @weight;
     font-size: @size;
     line-height: @lineHeight;
   }
+}
+
+.border-radius(@radius: 5px) {
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow;
+  -moz-box-shadow: @shadow;
+  box-shadow: @shadow;
 }
