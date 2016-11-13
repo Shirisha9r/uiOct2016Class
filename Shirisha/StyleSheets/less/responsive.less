@@ -1,0 +1,13 @@
+.generate-columns-md(@n, @i: 1) when (@i =< @n) {
+    .column-md-@{i} {
+        width: (@i * 100% / @n);
+    }
+    .generate-columns-md(@n, (@i + 1));
+}
+
+.generate-columns-lg(@n, @i: 1) when (@i =< @n) {
+    .column-lg-@{i} {
+        width: (@i * 100% / @n);
+       }
+    .generate-columns-lg(@n, (@i + 1));
+}

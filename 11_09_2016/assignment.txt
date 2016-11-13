@@ -1,7 +1,5 @@
 1. grab the latest code from github.com. create a new folder with your name at the global. dont create this folder inside any dates folder.
-    inside this folder, create three folders: templates, stylesheets, scripts
-    templates = this will hold all the html files
-    stylesheets = this will have two folders: less and styles.
+    inside this folder, create three folders: templates, stylesheets, scripts templates = this will hold all the html files stylesheets = this will have two folders: less and styles.
     scripts = empty
 
 2. develop a login form from scratch. This is in HTML and make sure that "trinity" structure and indentations are maintained
