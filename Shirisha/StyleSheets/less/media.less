@@ -3,12 +3,37 @@
   width: 100%;
 }
 
+.row {
+    background-color: #F0F8FF;
+}
+
 @media only screen and (min-width: 600px) {
     /* For tablets: */
+    html {
+        #fonts > .serif;
+    }
     .generate-columns-md(12);
+        .row {
+            background-color: #FAEBD7;
+        }
+    .menu > ul li {
+        display: inline-block;
+        padding: 5px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+    html {
+        #fonts > .monospace;
+    }
     .generate-columns-lg(12);
+        .row {
+            background-color: #00FFFF;
+        }
+    .menu > ul li {
+        display: inline-block;
+        padding: 5px;
+    }
+
 }
