@@ -23,8 +23,8 @@ body{
     padding: 15px;
 }
 
-.menu{
-    >ul{
+nav {
+    ul{
         list-style:none;
         li{
             color: black;
@@ -33,10 +33,6 @@ body{
     }
 }
 
-
-div > p {
-
-}
 
 .container {
     max-width: 80%;
@@ -81,23 +77,18 @@ ul.breadcrumb {
     padding: 8px 16px;
     list-style: none;
     background-color: #eee;
-}
-
-ul.breadcrumb li {
-    display: inline;
-}
-
-ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "\00BB";
-}
-ul.breadcrumb li a {
-    color: green;
-}
-
-ul.breadcrumb li {
-    color: black;
+    li {
+        display: inline;
+        color: black;
+        a {
+            color: green;
+        }
+    }
+    li+li:before {
+        padding: 8px;
+        color: black;
+        content: "\00BB";
+    }
 }
 
 @import "responsive.less";
