@@ -1,5 +1,5 @@
 html {
-    #fonts > .sans-serif;
+    .fonts > .monospace-mixin(normal; 14px; 20px);
 }
 
 body{
@@ -83,11 +83,14 @@ ul.breadcrumb {
         a {
             color: green;
         }
-    }
-    li+li:before {
-        padding: 8px;
-        color: black;
-        content: "\00BB";
+        +li{
+            &::before {
+                padding: 8px;
+                color: black;
+                content: "\00BB";
+            }
+        }
+
     }
 }
 

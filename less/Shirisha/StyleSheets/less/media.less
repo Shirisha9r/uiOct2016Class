@@ -10,7 +10,7 @@
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     html {
-        #fonts > .serif;
+        .fonts > .serif;
     }
     .generate-columns-md(12);
         .row {
@@ -29,12 +29,13 @@
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     html {
-        #fonts > .monospace;
+        .fonts > .monospace-mixin(normal; 14px; 20px);
     }
     .generate-columns-lg(12);
         .row {
             background-color: #00FFFF;
         }
+
     nav {
         ul {
             li {
