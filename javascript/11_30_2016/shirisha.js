@@ -69,18 +69,19 @@
     //p->q->r->fullName
     p.q.r.fullName = 'Tanvhika Kuncha';
 
-    console.log(p);
-    console.log(q);
+    //console.log(p);
+    //console.log(q);
         /////////////////////////////////////////////////////////////
         // datatype as function
         //-- defining a named function 'addition' with arguments which will always return a value
         function addition(a,b,c) {
             //variable sum is local to the function 'addition'
             var sum = a+b+c;
-            return sum;
+
             // below p,q are global variables here inside the function 'addition'
             console.log(p);
             console.log(q);
+            return sum;
         }
         // -- calling addition function and assigning to the 'output' variable
         var output = addition(22,44,99);
