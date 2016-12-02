@@ -1,5 +1,6 @@
 (function(){
-    /***this class is an object that can be reused and here the function is converted into an object
+    /*** this is a class like function in ECMAs script....by the way there is no class concept here!!!
+        this class is an object that can be reused and here the function is converted into an object
         using the keyword 'this'*/
     function x(){
         this.firstName = 'Shirisha';
