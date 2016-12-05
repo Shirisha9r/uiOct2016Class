@@ -31,4 +31,33 @@
     console.log(z);
     console.log(y);
 
+    /***** one more example
+    Invoking a Function with a Function Constructor
+    If a function invocation is preceded with the new keyword, it is a constructor invocation.
+
+    It looks like you create a new function, but since JavaScript functions are objects you actually
+    create a new object:*/
+
+    //Example:
+    // This is a function constructor:
+    function myfunction(fName,lName){
+        this.firstName = fName;
+        this.lastName = lName;
+    }
+    // this creates the new object
+    var m = new myfunction('John','Doe');
+    m.firstName;   // this will return John
+    document.getElementById("demo").innerHTML = m.fName;
+
+
+
+
+
+
+
+
+
+
+
+
 })();
