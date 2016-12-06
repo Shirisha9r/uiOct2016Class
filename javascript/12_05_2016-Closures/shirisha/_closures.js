@@ -3,10 +3,10 @@
      // defining a function and converting into an object/ class like function
     function total(){
         var _self = this; //alias for 'this' keyword
-        _self.addition;
-        _self.substract;
-        _self.product;
-        _self.dividend;
+        _self.addition = null;
+        _self.substract = null;
+        _self.product = null;
+        _self.dividend = null;
 
          // defining a function and converting into an object / class like function
         function mathematics(a , b){
@@ -15,13 +15,12 @@
             _mat.difference = a - b;
             _mat.multiplication = a * b;
             _mat.division = a / b;
-            console.log(_mat);
-            console.log(_self);//the outer function variable is accessible from the inner function
+
 
         }
 
         // invoking a function using the constructor 'new' keyword
-        var m1 = new mathematics(-100,-0); // class inheritance
+        var m1 = new mathematics(-100,-10); // class inheritance
         _self.addition = m1.sum;
         _self.substract = m1.difference;
         _self.product = m1.multiplication;
@@ -33,6 +32,7 @@
     }
     // invoking a function using the constructor 'new' keyword
     var task = new total(); // class like function inheritance
+    task.addition = 200;
     console.log(task);
     //console.log(m1); //gives an error: m1 not defined
 
