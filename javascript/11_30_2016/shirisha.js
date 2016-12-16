@@ -1,5 +1,7 @@
 /*      this script will have IFFE construct with primitive datatype,object datatype, named and
-        anonymous functions---- IIFE constructis used inorder to avoid the memory leaks from the global variables    */
+        anonymous functions---- IIFE constructis used inorder to avoid the memory leaks from the global variables
+          This is a technique used to limit variable scope;
+          it's the only way to prevent variables from polluting the global namespace.          */
 (function(){
 
     /*****
@@ -78,10 +80,10 @@
             //variable sum is local to the function 'addition'
             var sum = a+b+c;
 
-            // below p,q are global variables here inside the function 'addition'
+/*            // below p,q are global variables here inside the function 'addition'
             console.log(p);
-            console.log(q);
-            return sum;
+            console.log(q);*/
+           /* return sum;*/
         }
         // -- calling addition function and assigning to the 'output' variable
         var output = addition(22,44,99);
@@ -97,7 +99,7 @@
             // **** Its not mandatory to return the value
 
         }
-        console.log(w);
+        console.log(w());
 
 
 

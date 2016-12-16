@@ -1,5 +1,5 @@
 // self executing anonymous function
-
+//This is a technique used to limit variable scope; it's the only way to prevent variables from polluting the global namespace.
 (function() {
      function sayHello(){
      alert("Hello tutorialspointexamples.com");

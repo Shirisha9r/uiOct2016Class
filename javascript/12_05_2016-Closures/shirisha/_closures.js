@@ -1,4 +1,5 @@
 // IIFE construct: self-invoking function
+
 (function(){
      // defining a function and converting into an object/ class like function
     function total(){
