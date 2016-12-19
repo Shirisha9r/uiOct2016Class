@@ -2,7 +2,7 @@
  var obj = {
    "firstName": "Shirisha",
    "lastname": "Reddy",
-   "age": 20,
+   "age": 27,
    "state": {
             "city": "Dallas",
             "county" : "Denton"
@@ -12,7 +12,7 @@
  // stringify is a function that would convert JSON object to string
  // to communicate with the server
 var objStr = JSON.stringify(obj);
- console.log(objStr);//{"firstName":"Shirisha","lastname":"Reddy","age":20,"state":{"city":"Dallas","county":"Denton"}}
+ console.log(objStr);//{"firstName":"Shirisha","lastname":"Reddy","age":27,"state":{"city":"Dallas","county":"Denton"}}
 
  // parse function is used to convert the string to JSON object
 
