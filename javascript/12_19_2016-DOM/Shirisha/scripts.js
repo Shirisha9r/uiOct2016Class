@@ -13,6 +13,7 @@
     var c1 = document.querySelectorAll('h1');
     console.log(c1);
     var d = document.querySelectorAll('[data-srikar="viswa"]');
+    console.log("print d");
     console.log(d);
     /*console.log('#foo\bar') */              // "#foobar" (\b is the backspace control character)
     /*document.querySelector('#foo\bar')    // Does not match anything*/
@@ -22,13 +23,14 @@
     var p1 = document.body.querySelector('.viswa');
     console.log("print p1");
     console.log(p1);
-    var lis = document.querySelectorAll('ul.nav > li');
-    for (var i = 0; i < lis.length; i++) {
-      process(lis.item(i));
+    var lis = document.querySelector("ul.navClass li");
+    console.log(lis);
+   /* for (var i = 0; i < lis.length; i++) {
+      process(lis.[i]);
     }
-    fuction process(lis.item(i)) {
-      return 'lis.length';
-    }
+    fuction process(i) {
+      return lis.length;
+    }*/
 
 
 
