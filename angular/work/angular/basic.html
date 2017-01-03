@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- start bootstrapping the personal details app here! -->
+<html data-ng-app="PersonalDetailsApp">
+    <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    </head>
+    <body>
+        <section >
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="">Google</a> </li>
+                        <li><a href="">Yahoo</a> </li>
+                        <li><a href="">AOL</a> </li>
+                        <li><a href="">GMAIL</a> </li>
+                    </ul>
+                </nav>
+            </header>
+            <article>
+                <div>
+                    <label>Name:</label>
+                    <input type="text" data-ng-model="yourName" placeholder="Enter a name here">
+                    <hr>
+                    <!-- Angular expression for databinding-->
+                    <h3>Hello PersonalDetailsApp.{{yourName}}!</h3>
+                </div>
+                <div>
+                    <label>Email address:</label>
+                    <input type="email" data-ng-model="yourMailId" placeholder="Enter an email id here">
+                    <hr>
+                    <h3>My email id is:{{PersonalDetailsApp.yourMailId}}!</h3>
+                </div>
+
+            </article>
+            <footer></footer>
+        </section>
+
+       <!-- <script src="../../../work/angular/angular.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    </body>
+</html>
