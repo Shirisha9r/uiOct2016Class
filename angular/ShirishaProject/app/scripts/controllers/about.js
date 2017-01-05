@@ -7,11 +7,13 @@
  * # AboutCtrl
  * Controller of the shirishaprojectApp
  */
+/*
 angular.module('shirishaprojectApp')
-  .controller('AboutCtrl', function () {
+  .controller('myCtrlr1', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
   });
+*/
