@@ -15,13 +15,22 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="shirishaprojectApp">
+  <body ng-app="shirishaprojectApp"> <!-- $rootScope-->
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
+
+    <div ng-controller="projectController"> <!--$scope with different id is assigned to the controller and this is the view model for our controller -->
+      <span> Hello world!</span>
+    </div>
+    <div ng-controller="shirishaController"> <!--$scope with other id than above is assigned to the controller this is the view model for our controller -->
+    <span> My name is Shirisha!</span>
+  </div>
+    <!-- -->
+    <!--*************     below is the code from yeoman team *****************     -->
+    <!--<div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -56,7 +65,7 @@
       <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
-    </div>
+    </div>-->
 
     <!-- -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -88,8 +97,10 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+      <script src="scripts/controllers/ProjectController.js"></script>
+      <script src="scripts/controllers/shirishaController.js"></script>
+
+
         <!-- endbuild -->
 </body>
 </html>
