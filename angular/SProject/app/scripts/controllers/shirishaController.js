@@ -2,13 +2,10 @@
 (function(angular){
   'use strict';
 
-  function ShirishaController($rootScope){
-    $rootScope.user ={
-      firstName: '',
-      lastName: ''
-    };
+  function ShirishaController($scope){
+    console.log($scope);
   }
-  ShirishaController.$inject = ['$scope','$rootScope'];
+  ShirishaController.$inject = ['$scope'];
   //a project can have multiple modules
   // create a module 'ProjApp_Controllers' we will not inject any dependencies here.. the reason is
   // we will be using 'ProjApp_Controllers' in app.js and this will get the dependensies automatically

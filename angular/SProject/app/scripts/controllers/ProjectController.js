@@ -3,12 +3,9 @@
 (function(angular){
   'use strict';
   function ProjectController($scope){
-    $scope.user ={
-      firstName: 'Srikar',
-      lastName: 'Shastry'
-    };
+    console.log($scope);
   }
-  ProjectController.$inject = ['$scope','$rootScope'];
+  ProjectController.$inject = ['$scope'];
 
  // call a module from app.js
  //angular.module('shirishaProjectApp').controller('projectController',ProjectController);

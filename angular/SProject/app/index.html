@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="shirishaprojectApp"> <!-- $rootScope-->
+  <body ng-app="sprojectApp"> <!-- $rootScope-->
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -23,18 +23,10 @@
     <!-- Add your site or application content here -->
 
     <div ng-controller="projectController"> <!--$scope with different id is assigned to the controller and this is the view model for our controller -->
-      <!--<span ng-bind = "user.firstName"></span>-->
-      <!--<span ng-bind = "user.lastName"></span>-->
-      <!-- Angular expression-->
-      <span> {{user.firstName}} {{user.lastName}} is {{10+19}} yrs old</span>
+      <span> Hello world!</span>
     </div>
     <div ng-controller="shirishaController"> <!--$scope with other id than above is assigned to the controller this is the view model for our controller -->
-      <span ng-bind = "user.firstName"></span>
-      <span ng-bind = "user.lastName"></span>
-      <br>
-      <input type="text" id="firstName" name="firstName" placeholder="First Name" ng-model="user.firstName">
-      <br>
-      <input type="text" id="lastName" name="lastName" placeholder="last Name" ng-model="user.lastName">
+    <span> My name is Shirisha!</span>
   </div>
     <!-- -->
     <!--*************     below is the code from yeoman team *****************     -->
