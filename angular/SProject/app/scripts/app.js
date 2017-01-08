@@ -1,16 +1,31 @@
 // IIFE construct with angular object
-    /***  once we source the angular JS file in the index.html file, in the DOM
-    the angular object is available (window.angular is available for me)
-    **** if window.angular does not exist then window.angular = {} empty object
-    *** this will avoid the big list of errors  and when these will be gone
-       it means angular is connected to the html            ****/
-// IIFE construct with angular object
 (function(angular){
   'use strict';
-
+  // configuring the app even before the apprun and app is initialised
+  // there is an object $routeprovider inside the ngRoute and $routeprovider has a property called 'when'
+  // we can assign a controller if we want to
+  // when /home url is loaded this html is called and the controller will get executed
+  function AppConfig($routeProvider){
+     $routeProvider
+      .when('/home',{
+        templateUrl: '../templates/home.tpl.html',
+        controller: 'homeController'
+      })
+      .when('/about',{
+        templateUrl: '../templates/about.tpl.html',
+        controller: 'projectController'
+      })
+      .otherwise('/home');
+  }
+  // inside the app config we inject the route provider
+  AppConfig.$inject = ['$routeProvider'];
 
   // 1..callback function to be executed only once as soon as the app is initialized
-  function AppRun(){
+  function AppRun($rootScope){
+    $rootScope.user = {
+      firstName: '',
+      lastName: ''
+    };
 
   }
   /**** injecting the dependency and this is different from the below dependency.
@@ -24,7 +39,7 @@
              load the user information..whatever response I get from the server, I have to put to
              the $rootScope(always holds the user information)
   ****/
-  AppRun.$inject = [];
+  AppRun.$inject = ['$rootScope'];
 
   // 2...callback for the controller...remove this and write in a seperate Projectcontroller.js
 //  function ProjectController($scope){
@@ -46,24 +61,25 @@
                                         'ngSanitize',
                                         'ngTouch',
                                         'ProjApp_Controllers'
-                                         ]);
-// create a custom module
-  angular.module('ProjApp_Controllers',[]);
-     //actual configuration of my application **** remove this
-//    .config()
+                                         ])
+
+
+     // create the config function after injecting the ngRoute
+    .config(AppConfig)
     // when app runs for the first time we have to execute a callback function
     //adding the $rootscope as one of the dependencies **** this approach is confusing
 //    .run(['$rootScope',function($rootScope){}]);
 
     /*** second approach for run   ***/
-//    .run(AppRun);
+    .run(AppRun);
 
     // write this in another file and name it as projectController.js and inject it in the app
 //    .controller('projectController',ProjectController);
 
     //angular.module('shirishaprojectApp.controllers',[]);
 
-
+  // create a custom module only for controllers
+    angular.module('ProjApp_Controllers',[]);
 
 
 
