@@ -60,7 +60,8 @@
                                         'ngRoute',
                                         'ngSanitize',
                                         'ngTouch',
-                                        'ProjApp_Controllers'
+                                        'ProjApp_Controllers',
+                                        'ProjApp_Services'
                                          ])
 
 
@@ -80,6 +81,9 @@
 
   // create a custom module only for controllers
     angular.module('ProjApp_Controllers',[]);
+
+    //create a custom module for services and inject it in the above 'sprojectangsrvsApp' main module of the application
+    angular.module('ProjApp_Services',[]);
 
 
 
