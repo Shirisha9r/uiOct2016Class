@@ -8,7 +8,7 @@
     $routeProvider
       .when('/home',{
         templateUrl: '../templates/home.tpl.html',
-        controller: 'HomeController'
+        controller: 'HomeController as HomeCtrl'
       })
       .when('/about',{
         templateUrl: '../templates/about.tpl.html',
@@ -36,10 +36,17 @@
                   'ngRoute',
                   'ngSanitize',
                   'ngTouch',
-                  'projectApp.controllers'])
+                  'projectApp.controllers',
+                  'projectApp.services',
+                  'projectApp.directives'])
     .config(AppConfig)
     .run(AppRun);
-  // create a custom module
+
+  // create a custom module for controllers
   angular.module('projectApp.controllers',[]);
+  // create a custom module for services
+  angular.module('projectApp.services',[]);
+  // create a custom module for directives
+  angular.module('projectApp.directives',[]);
 })(window.angular || (window.angular = {}));
 >>>>>>> upstream/master
