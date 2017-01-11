@@ -15,10 +15,9 @@
     };
     //we are returning an object
     return self;
-
-
-
   }
+
+  //inject the dependencies
 
   UserFactory.$inject = [];
 
