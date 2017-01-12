@@ -12,7 +12,8 @@
       })
       .when('/about',{
         templateUrl: '../templates/about.tpl.html',
-        controller: 'ProjectController'
+        controller: 'ProjectController',
+        controllerAs: 'ProjectCtrl'
       })
       .otherwise('/home');
   }
@@ -38,7 +39,8 @@
                   'ngTouch',
                   'projectApp.controllers',
                   'projectApp.services',
-                  'projectApp.directives'])
+                  'projectApp.directives',
+                  'ui.grid'])
     .config(AppConfig)
     .run(AppRun);
 
