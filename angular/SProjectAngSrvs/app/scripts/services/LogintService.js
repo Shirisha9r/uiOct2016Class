@@ -24,13 +24,9 @@
       }
     };
 
-
-
-
-
   }
 
-  LogintService.$inject = ['userFactory','$location','$scope'];
+  LogintService.$inject = ['userFactory','$location'];
 
 
 
