@@ -10,7 +10,7 @@
   }
   ProjectController.$inject = ['$scope','$rootScope'];
 
- // call a module from app.js
+ // call a module from app.js and registering the controller
  //angular.module('shirishaProjectApp').controller('projectController',ProjectController);
  angular.module('ProjApp_Controllers').controller('projectController',ProjectController);
 
