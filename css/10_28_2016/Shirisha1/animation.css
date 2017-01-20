@@ -136,13 +136,14 @@
     }
     100% {
         right: 70%;
+    }
 }
 
 .moveRight{
-    position: absolute !important;
-    -webkit-animation: scrollRight 2s linear !important;
-    -moz-animation: scrollRight 2s linear !important;
-    -o-animation: scrollRight 2s linear !important;
-    -ms-animation: scrollRight 2s linear !important;
-    animation: scrollRight 2s linear !important;
+    /*position: relative;*/
+    -webkit-animation: scrollRight 2s linear;
+    -moz-animation: scrollRight 2s linear;
+    -o-animation: scrollRight 2s linear;
+    -ms-animation: scrollRight 2s linear;
+    animation: scrollRight 2s linear;
 }

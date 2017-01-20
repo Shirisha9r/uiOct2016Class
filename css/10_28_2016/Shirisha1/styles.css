@@ -6,16 +6,17 @@ body{
     background: url(YellowStone.jpg) no-repeat;
    /* background-size:100% 100%;*/
     /*background-size: auto 100%;*/
-    background-size: 100% 138%;
+    /*as the screen size might be different, adjust this using the inspect element*/
+    background-size: 100% 140%;
     height:100%
 
 }
 
 form[name="RegistrationForm"]{
     background-color: #fff;
-    border: 3px solid #fff;
-    padding: 5px;
-    margin: 50,30,50,30;
+    border: 5px solid #fff;
+    padding: 10px;
+    margin: 50px,30px,50px,30px;
     margin-left: 30px;
     width: 350px;
     display: block;
